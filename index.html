@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <title>Change Background Color</title>
+    <style>
+        /* Optional: A default background color */
+        body {
+            background-color: white;
+        }
+    </style>
+</head>
+
+
+    <!-- Input field for color and a button to change the background -->
+    <input type="text" id="colorInput" placeholder="Enter a color (e.g., red, #FF5733)" />
+    <button onclick="changeBackgroundColor()">Change Background Color</button>
+
+    <script>
+        function changeBackgroundColor() {
+            // Get the input field
+            const colorInput = document.getElementById('colorInput');
+            
+            // Extract the color value
+            const color = colorInput.value;
+
+            // Set the background color
+            document.body.style.backgroundColor = color;
+        }
+    </script>
+
+
+</body>
+</html>
